@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 苹果手机适配 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>每日灵修</title>
+    <style>
+        /* 基础样式 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            /* 背景图片设置（替换 cover.jpg） */
+            background: url('cover.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            padding: 30px;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        /* 文字容器 */
+        .content {
+            background: rgba(0,0,0,0.5);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #FFD700;
+        }
+
+        /* 正文样式 */
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* 播放器样式 */
+        audio {
+            width: 100%;
+            margin-top: 20px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 25px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 文字内容区（可编辑） -->
+    <div class="content">
+        <h1>📖 今日经文</h1>
+        <p>【方生方灭】</p>
+        <p>"悉达多终于找到了一个方法以接触死亡的痛苦。他接受了变化是不可避免的，而死亡只是这个循环的一部分。而且他更进一步地体认到没有全能的力量能够扭转死亡之路，因此也就不会困在期待之中。如果没有盲目的期待，就不会有失望。如果能了解一切都是无常，就不会攀缘执著，如果不攀缘执著，就不会患得患失，也才能真正完完全全地活着。"</p>
+    </div>
+
+    <!-- 音频播放器（自动读取 audio.mp3） -->
+    <audio controls>
+        <source src="fangsheng.mp3" type="audio/mpeg">
+        您的设备不支持音频播放
+    </audio>
+</body>
+</html>
